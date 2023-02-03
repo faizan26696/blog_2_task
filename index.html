@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBlog.</title>
+    <script src="https://kit.fontawesome.com/d4462eb2f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <h1>Summary on JavaScript Variables</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="blog-content">
+                <div class="about">
+                    <h1>JavaScript variables</h1>
+                    <p>
+                        Variables are one of the important theories in programming. It could even be said to be the most
+                        important. They are part of the fundamentals of any programming language. Without them, it would
+                        be
+                        difficult to perform manipulation, and computations. We would have no way of storing
+                        information,
+                        retrieving them and no track of values. <br>
+
+                        A variable is a storage location or a memory location that holds a data type and values.
+                        JavaScript
+                        variables are variables declared and assigned in JavaScript,
+                        that
+                        holds
+                        values and datatypes.
+                        In this article, we will look at variables in JavaScript, the datatypes they hold, good naming
+                        and
+                        writing practices, how they are implemented and manipulated and their scope.</p>
+                </div>
+                <br>
+
+                <div class="first-image">
+                    <img src="jsvar.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Name-convection">
+        <h2>JavaScript Identifiers</h2>
+        <p>
+            You need to identify JavaScript variables with unique names. These unique names are called
+            identifiers. You can provide short names or descriptive names for your identifier. Some rules
+            you must keep in mind while naming JavaScript Identifiers are:
+        </p>
+        <div class="rules">
+            <ul>
+                <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+                <li>Names must begin with a letter.</li>
+                <li>The identifier names can also begin with $ and _.</li>
+                <li>Names are case sensitive. Thus, y and Y are different variables.</li>
+                <li>Reserved words cannot be used as names.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="variable-types">
+        <div class="var-types">
+            <h2>Variables types</h2>
+            <div class="list">
+                <h3>Var</h3>
+                <p>
+                    Before 2015 (ES6 release of JavaScript), var was the only keyword used in defining variables. It had
+                    some issues, one of it being that variables existed even outside the scope in which they were
+                    defined. So let and const were introduced to make up for the shortcomings of var.
+                </p>
+
+                <h3>Let</h3>
+                <p>
+                    Let is one of the keywords released in ES6. It is a better option to use var. It allows variables to
+                    be updated, only within the block in which it is initialized. Let declarations are hoisted to the
+                    top.
+                </p>
+
+                <h3>Const</h3>
+                <p>
+                    Const, just like let was introduced in 2015. It differs slightly from let and var. It is strict and
+                    used for variables whose values are constant and will not change during the execution of the
+                    program. These variables cannot be reassigned or updated.
+                </p>
+            </div>
+            <div class="image-type">
+                <img src="image-type.PNG" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="var-info-content">
+        <div class="var-info">
+            <div class="about-variable">
+                <h2>
+                    JavaScript variables Assigning
+                </h2>
+                <p>
+                    Assigning a value to a variable means using the assignment operator (=) or any other assignment
+                    operator (which we will look at later on) to apportion a value to a memory location.
+                    A variable is declared when it is created. In JavaScript, variables are declared using any of these
+                    three
+                    keywords - var, let and const.
+                    The code below creates/defines 3 variables a, b and c <br> which have for values 2, 4 and 6
+                    respectively.
+                </p>
+            </div>
+            <div class="variable-image">
+                <img src="vrd.PNG">
+            </div>
+        </div>
+        <div class="about-variable written">
+            <h2>The Data types of variable</h2>
+            <p>
+                We've seen that variables have a name, a value and that we can use keywords to define it. Variables also
+                got a type.
+
+                The type is a way to regroup similar variables and take actions on those without really knowing what are
+                their values when we write code.
+
+                For example, if I have two variables of the same type "integar", I know I can add it even though I don't
+                know the exact value which will be stocked.
+
+                There are several types of variables in JavaScript. In the example of the 3 a, b and c variables we
+                already talked about, each variable stocks a number. So the type is Number.
+
+                Variables can be one of the following types:</p>
+        </div>
+        <div class="variable-data-types">
+            <div class="list-var">
+                <ul>
+                    <li><span class="type-text"> String </span> :A string of characters (± text)</li>
+                    <li><span class="type-text"> Boolean </span> : A variable that can hold only 2 values: true or
+                        false.
+                    </li>
+                    <li><span class="type-text"> Array </span>: A value table.</li>
+                    <li><span class="type-text"> Object </span>: An object.</li>
+                    <li><span class="type-text"> Number </span>: A number. It can be integar, positive, negative,
+                        decimal.
+                    </li>
+                    <li><span class="type-text"> Symbol </span>: A unique data that can't be changed.</li>
+                    <li><span class="type-text">undefined</span>:A variable that has not been assigned a value</li>
+                    <li><span class="type-text">Bigint</span> :a numeric primitive in JavaScript that can represent
+                        integers with
+                        arbitrary magnitude</li>
+                    <li><span class="type-text">Null</span> :represents the intentional absence of any object value</li>
+
+                </ul>
+            </div>
+            <div class="data-type-image">
+                <img src="data-type2.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="access-var">
+        <h2>How access value of a variable?</h2>
+        <p>
+            In JavaScript, you can access the value of a variable by simply referencing its name in your code. For
+            example, if you have a variable named x with a value of 10, you can access its value by using the variable
+            name x in an expression or by printing it using console.log
+        </p>
+        <span class="example">
+            <p>
+                let x = 10;
+                <br>
+                console.log(x); // <span style="background: yellow;">Output: 10</span>
+            </p>
+        </span>
+    </div>
+
+    <div class="last-example">
+        <h2>What will happen if we try to access the variable that doesn’t exist?
+        </h2>
+        <p>
+            If we try to access a variable that doesn't exist in your code, it will raise a NameError exception. For
+            example:
+            <br>
+            <span class="example-2">
+                <p class="exp-2"> print(y) # Output: NameError: name 'y' is not defined</p>
+            </span>
+            <br>
+            This means that the variable y has not been defined or assigned a value in your code. To avoid this error,
+            make sure that you have defined and assigned a value to a variable before trying to access it.
+        </p>
+    </div>
+
+    <div class="resources">
+        <div class="list-resources">
+            <h2>To know more about JavaScript</h2>
+            <p>Here are some resources which you can explore JavaScript on your own.</p>
+            <ul class="resources-links">
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript|MDN</a></li>
+                <li><a href="https://stackoverflow.design/product/guidelines/javascript/">JavaScript|stackoverflow</a>
+                </li>
+                <li><a href="https://www.w3schools.com/js/">JavaScript|w3schools</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content-footer">
+            <div class="copyright">
+                <p class="footer-item">Copyright © <i class="fa-solid fa-laptop-code"></i>Mohammad Faizan</p>
+            </div>
+        </div>
+
+        <!-- div.variable -->
+
+
+</body>
+
+</html>
